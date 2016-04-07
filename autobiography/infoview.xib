@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Corbel.ttf">
+            <string>Corbel</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoView" customModule="autobiography" customModuleProvider="target">
+            <connections>
+                <outlet property="continueImage" destination="eXb-07-Stw" id="tDg-xJ-cEQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JesseFell" translatesAutoresizingMaskIntoConstraints="NO" id="zVJ-95-gCA">
+                    <rect key="frame" x="69" y="69" width="263" height="315"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="315" id="ugH-sf-nlC"/>
+                        <constraint firstAttribute="width" constant="263" id="yBN-kt-fSc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jesse W. Fell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahn-IT-WGW">
+                    <rect key="frame" x="132" y="423" width="136" height="31.5"/>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="26"/>
+                    <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About the Autobiography" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1a-Rb-4MZ">
+                    <rect key="frame" x="332" y="69" width="692" height="54"/>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="45"/>
+                    <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzk-YY-H85">
+                    <rect key="frame" x="362" y="183" width="632" height="349.5"/>
+                    <string key="text">In December 1859, Abraham Lincoln drafted his first extensive autobiographical narrative, a roughly 600-word sketch prepared at the request of an old friend and Republican newspaper editor Jesse W. Fell, who was asking on behalf of a Republican newspaper from Chester County, Pennsylvania that was preparing a series of profiles on the leading contenders for the 1860 Republican presidential nomination. The brief summary became the starting point for subsequent newspaper articles and campaign biographies and illustrates how Lincoln wanted his own story presented to voters in 1860.</string>
+                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="26"/>
+                    <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="continue" translatesAutoresizingMaskIntoConstraints="NO" id="eXb-07-Stw">
+                    <rect key="frame" x="182" y="649" width="660" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eXb-07-Stw" secondAttribute="height" multiplier="11:1" id="9Eh-hX-2Rz"/>
+                        <constraint firstAttribute="width" constant="660" id="Gs1-U7-dLi"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="eXb-07-Stw" secondAttribute="bottom" constant="59" id="6rZ-i2-igR"/>
+                <constraint firstAttribute="trailing" secondItem="K1a-Rb-4MZ" secondAttribute="trailing" id="9tQ-zM-TT8"/>
+                <constraint firstItem="zVJ-95-gCA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="69" id="BcP-43-GHz"/>
+                <constraint firstItem="Hzk-YY-H85" firstAttribute="leading" secondItem="zVJ-95-gCA" secondAttribute="trailing" id="cCB-FU-Upo"/>
+                <constraint firstItem="Hzk-YY-H85" firstAttribute="width" secondItem="K1a-Rb-4MZ" secondAttribute="width" constant="-60" id="cNv-zG-gXZ"/>
+                <constraint firstItem="zVJ-95-gCA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="69" id="d72-Sb-bBm"/>
+                <constraint firstItem="ahn-IT-WGW" firstAttribute="top" secondItem="zVJ-95-gCA" secondAttribute="bottom" constant="39" id="dcT-bs-hcg"/>
+                <constraint firstItem="eXb-07-Stw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jG3-SN-xxo"/>
+                <constraint firstItem="Hzk-YY-H85" firstAttribute="centerX" secondItem="K1a-Rb-4MZ" secondAttribute="centerX" id="rQg-h2-9ia"/>
+                <constraint firstItem="ahn-IT-WGW" firstAttribute="centerX" secondItem="zVJ-95-gCA" secondAttribute="centerX" id="tbN-n0-emI"/>
+                <constraint firstItem="Hzk-YY-H85" firstAttribute="top" secondItem="K1a-Rb-4MZ" secondAttribute="bottom" constant="60" id="wlD-b3-8kf"/>
+                <constraint firstItem="K1a-Rb-4MZ" firstAttribute="top" secondItem="zVJ-95-gCA" secondAttribute="top" id="zp0-0y-nBr"/>
+                <constraint firstItem="K1a-Rb-4MZ" firstAttribute="leading" secondItem="zVJ-95-gCA" secondAttribute="trailing" id="zwp-MX-h1U"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="cCB-FU-Upo"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="JesseFell" width="485" height="580"/>
+        <image name="continue" width="1760" height="160"/>
+    </resources>
+</document>

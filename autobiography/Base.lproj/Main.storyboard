@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8hU-1e-hU3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--AV Player View Controller-->
+        <scene sceneID="iTc-90-Cpd">
+            <objects>
+                <avPlayerViewController showsPlaybackControls="NO" videoGravity="AVLayerVideoGravityResizeAspectFill" id="oYS-BY-bkn" customClass="IntroViewController" customModule="autobiography" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eXv-fv-Iia"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <segue destination="8We-WI-gBh" kind="show" identifier="tomain" id="qCk-9t-fdI"/>
+                    </connections>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dED-UW-lYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823" y="342"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="DS9-Ew-5F6">
+            <objects>
+                <viewController id="8We-WI-gBh" customClass="MainViewController" customModule="autobiography" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GVo-g9-5aj"/>
+                        <viewControllerLayoutGuide type="bottom" id="ODd-BP-nbB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fny-5s-dOt" customClass="UIScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZs-wF-7Qd" customClass="BackgroundView" customModule="autobiography" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="2048" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pZs-wF-7Qd" firstAttribute="top" secondItem="GVo-g9-5aj" secondAttribute="bottom" id="Pcz-l3-mCy"/>
+                            <constraint firstItem="pZs-wF-7Qd" firstAttribute="leading" secondItem="fny-5s-dOt" secondAttribute="leading" id="Xa8-Sk-uh4"/>
+                            <constraint firstItem="pZs-wF-7Qd" firstAttribute="width" secondItem="fny-5s-dOt" secondAttribute="width" multiplier="2" id="hn8-LT-qSS"/>
+                            <constraint firstItem="pZs-wF-7Qd" firstAttribute="height" secondItem="fny-5s-dOt" secondAttribute="height" id="nWE-FZ-6tf"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="content" destination="pZs-wF-7Qd" id="r0l-a2-ifB"/>
+                        <outlet property="scroller" destination="fny-5s-dOt" id="fhp-BE-g1D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bdb-e0-p2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2979" y="336"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wrT-uy-VBc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="8hU-1e-hU3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FbI-eJ-pAc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oYS-BY-bkn" kind="relationship" relationship="rootViewController" id="zwN-UB-EbM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lLq-Pb-rBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="338"/>
+        </scene>
+    </scenes>
+</document>

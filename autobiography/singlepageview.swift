@@ -12,7 +12,7 @@ protocol HotButtonDelegate {
     func hotButtonReceivedClick(hotButton: HotButtonView)
 }
 
-class HotButtonView: UIButton {
+class HotButtonView: UIButton, UIGestureRecognizerDelegate {
     let basis: LocationInstance
     var delegate: HotButtonDelegate?
     private(set) var hasBeenClicked: Bool
@@ -26,7 +26,13 @@ class HotButtonView: UIButton {
         } else {
             setImage(basis.getBlueImage(), forState: .Normal)
         }
-        addTarget(self, action: "onClick", forControlEvents: .TouchUpInside)
+        // addTarget(self, action: "onClick", forControlEvents: .PrimaryActionTriggered)
+        let rec = UITapGestureRecognizer(target: self, action: "onClick")
+        rec.numberOfTapsRequired = 1
+        rec.numberOfTouchesRequired = 1
+        rec.cancelsTouchesInView = false
+        rec.delegate = self
+        addGestureRecognizer(rec)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -41,7 +47,13 @@ class HotButtonView: UIButton {
     }
     
     func onClick() {
+        highlighted = true
         delegate?.hotButtonReceivedClick(self)
+        highlighted = false
+    }
+    
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
 }
 
@@ -194,9 +206,15 @@ class SinglePageView: UIView, HotButtonSetDelegate, UIGestureRecognizerDelegate 
     
 }
 
+class SimScrollView: UIScrollView, UIGestureRecognizerDelegate {
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+}
+
 class SinglePageViewController: UIViewController, SinglePageViewDelegate, UIScrollViewDelegate {
     
-    @IBOutlet var scroller: UIScrollView!
+    @IBOutlet var scroller: SimScrollView!
     private(set) var style: LocationDataStyle
     let pageno: LocationDataPageNumber!
     let pageView: SinglePageView!

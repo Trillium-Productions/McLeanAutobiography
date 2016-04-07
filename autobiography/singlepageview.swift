@@ -206,15 +206,9 @@ class SinglePageView: UIView, HotButtonSetDelegate, UIGestureRecognizerDelegate 
     
 }
 
-class SimScrollView: UIScrollView, UIGestureRecognizerDelegate {
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
-    }
-}
-
 class SinglePageViewController: UIViewController, SinglePageViewDelegate, UIScrollViewDelegate {
     
-    @IBOutlet var scroller: SimScrollView!
+    @IBOutlet var scroller: UIScrollView!
     private(set) var style: LocationDataStyle
     let pageno: LocationDataPageNumber!
     let pageView: SinglePageView!

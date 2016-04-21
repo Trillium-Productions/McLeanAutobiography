@@ -6,7 +6,7 @@
 //  Copyright © 2016 William Rosenbloom. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 @interface DataProvider : NSObject
 

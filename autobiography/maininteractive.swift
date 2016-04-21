@@ -37,9 +37,14 @@ class MainViewController : UIViewController, UIScrollViewDelegate, InfoViewDeleg
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if scroller.contentOffset.x == 1024 {
+            view.userInteractionEnabled = false
             scroller.scrollEnabled = false
             pager.utilityOverlay.showUp({ () -> Void in
-                self.pager.utilityOverlay.showToolbar(withCompletion: nil, alsoShowHelp: !self.hasScrolledToAutobio)
+                self.pager.utilityOverlay.showToolbar(withCompletion:
+                    { () -> Void in
+                        self.view.userInteractionEnabled = true
+                    }
+                    , alsoShowHelp: !self.hasScrolledToAutobio)
                 self.hasScrolledToAutobio = true
             })
         }

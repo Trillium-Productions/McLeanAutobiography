@@ -11,6 +11,6 @@
 @interface DataProvider : NSObject
 
 + (NSDictionary * _Nonnull)getHotButtonsLocationsDictionary;
-+ (NSArray<NSDictionary<NSString *,NSNumber *> *> * _Nonnull)getPopupsSizesDictionary;
++ (NSArray<NSDictionary<NSString *, NSNumber *> *> * _Nonnull)getPopupsSizesDictionary;
 
 @end

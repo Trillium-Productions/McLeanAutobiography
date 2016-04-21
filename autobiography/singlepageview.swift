@@ -269,10 +269,6 @@ class SinglePageViewController: UIViewController, SinglePageViewDelegate, UIScro
         parent.onTapReceived()
     }
     
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        return true
-    }
-    
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return pageView
     }

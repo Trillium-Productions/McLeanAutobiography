@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "247"
             endingLineNumber = "247"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "resetForStyle(_:withData:animated:completion:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "autobiography/toolbarview.swift"
-            timestampString = "481567381.913737"
+            timestampString = "482948817.211123"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
             landmarkName = "gestureRecognizer(_:shouldReceiveTouch:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -47,8 +47,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "271"
             endingLineNumber = "271"
-            landmarkName = "singlePageViewReceivedSignalFromSet(_:fromButton:pageView:)"
-            landmarkType = "5">
+            landmarkName = "SinglePageViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,6 +160,22 @@
             startingLineNumber = "44"
             endingLineNumber = "44"
             landmarkName = "sendEvent(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "autobiography/infoview.swift"
+            timestampString = "482949995.621133"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "onContinueTap()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

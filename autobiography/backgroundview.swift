@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable class BackgroundView : UIView {
     
     @IBOutlet var infoView: InfoView!
-    private(set) var parent: MainViewController?
+    var parent: MainViewController?
     
     func create() {
         let arr = NSBundle.mainBundle().loadNibNamed("scrollbackground", owner: self, options: nil)

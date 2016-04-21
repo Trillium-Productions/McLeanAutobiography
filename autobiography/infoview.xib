@@ -40,24 +40,27 @@
                     <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzk-YY-H85">
-                    <rect key="frame" x="362" y="183" width="632" height="349.5"/>
-                    <string key="text">In December 1859, Abraham Lincoln drafted his first extensive autobiographical narrative, a roughly 600-word sketch prepared at the request of an old friend and Republican newspaper editor Jesse W. Fell, who was asking on behalf of a Republican newspaper from Chester County, Pennsylvania that was preparing a series of profiles on the leading contenders for the 1860 Republican presidential nomination. The brief summary became the starting point for subsequent newspaper articles and campaign biographies and illustrates how Lincoln wanted his own story presented to voters in 1860.</string>
-                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="26"/>
-                    <color key="textColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="38" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzk-YY-H85">
+                    <rect key="frame" x="362" y="183" width="632" height="366.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="632" id="FbS-sl-aKF"/>
+                    </constraints>
+                    <string key="text">In December 1859, Abraham Lincoln wrote a brief autobiographical sketch. This was done at the request of his good friend Jesse Fell, who wanted to better introduce Lincoln to northern voters. Although Lincoln was a rising star in the Republican Party, most folks outside of Illinois didn’t know that much about him. This fascinating 599-word document is a rare instance of Lincoln “opening up” and offering rich first hand details of his life and career.</string>
+                    <fontDescription key="fontDescription" name="Corbel" family="Corbel" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="continue" translatesAutoresizingMaskIntoConstraints="NO" id="eXb-07-Stw">
-                    <rect key="frame" x="182" y="649" width="660" height="60"/>
+                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="continue" translatesAutoresizingMaskIntoConstraints="NO" id="eXb-07-Stw">
+                    <rect key="frame" x="182" y="649" width="660" height="65"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="eXb-07-Stw" secondAttribute="height" multiplier="11:1" id="9Eh-hX-2Rz"/>
+                        <constraint firstAttribute="width" secondItem="eXb-07-Stw" secondAttribute="height" multiplier="11:1" constant="-55" id="9Eh-hX-2Rz"/>
                         <constraint firstAttribute="width" constant="660" id="Gs1-U7-dLi"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="eXb-07-Stw" secondAttribute="bottom" constant="59" id="6rZ-i2-igR"/>
+                <constraint firstAttribute="bottom" secondItem="eXb-07-Stw" secondAttribute="bottom" constant="54" id="6rZ-i2-igR"/>
                 <constraint firstAttribute="trailing" secondItem="K1a-Rb-4MZ" secondAttribute="trailing" id="9tQ-zM-TT8"/>
                 <constraint firstItem="zVJ-95-gCA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="69" id="BcP-43-GHz"/>
                 <constraint firstItem="Hzk-YY-H85" firstAttribute="leading" secondItem="zVJ-95-gCA" secondAttribute="trailing" id="cCB-FU-Upo"/>
@@ -85,6 +88,6 @@
     </objects>
     <resources>
         <image name="JesseFell" width="485" height="580"/>
-        <image name="continue" width="1760" height="160"/>
+        <image name="continue" width="1620" height="160"/>
     </resources>
 </document>

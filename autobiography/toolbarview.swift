@@ -77,6 +77,7 @@ enum ToolbarPresentationState {
     @IBOutlet weak var leftPager: UIButton!
     @IBOutlet weak var rightPager: UIButton!
     @IBOutlet weak var segments: UISegmentedControl!
+    @IBOutlet weak var gotItButton: UIButton!
     
     private(set) var helpPresentationState = ToolbarPresentationState.Invisible
     private(set) var barPresentationState = ToolbarPresentationState.Invisible
@@ -91,6 +92,7 @@ enum ToolbarPresentationState {
             }
         }
         segments.setTitleTextAttributes([NSFontAttributeName: UIFont(name: "Corbel", size: 26)!], forState: .Normal)
+        makeGotItNormal()
     }
     
     override init(frame: CGRect) {
@@ -119,10 +121,30 @@ enum ToolbarPresentationState {
         create()
     }
     
+    func showUp(completion: (() -> Void)?) {
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.topConstraint.constant = 0
+            self.layoutIfNeeded()
+            }) { (finished: Bool) -> Void in
+                completion?()
+        }
+    }
+    
+    func goAway(completion: (() -> Void)?) {
+        hideToolbar { () -> Void in
+            UIView.animateWithDuration(0.5, animations: { () -> Void in
+                self.topConstraint.constant = -90
+                self.layoutIfNeeded()
+                }, completion: { (finished: Bool) -> Void in
+                    completion?()
+            })
+        }
+    }
+    
     func showHelpScreen(withCompletion completion: (() -> Void)?) {
         if barPresentationState == .Visible && helpPresentationState == .Invisible {
             helpPresentationState == .Animating
-            helpScreen.becomeVisible(1, completion: { () -> Void in
+            helpScreen.becomeVisible(0.5, completion: { () -> Void in
                 self.helpPresentationState = .Visible
                 completion?()
             })
@@ -134,7 +156,7 @@ enum ToolbarPresentationState {
     func hideHelpScreen(withCompletion completion: (() -> Void)?) {
         if helpPresentationState == .Visible {
             helpPresentationState = .Animating
-            helpScreen.becomeInvisible(1, completion: { () -> Void in
+            helpScreen.becomeInvisible(0.5, completion: { () -> Void in
                 self.helpPresentationState = .Invisible
                 completion?()
             })
@@ -160,11 +182,10 @@ enum ToolbarPresentationState {
     func showToolbar(withCompletion completion: (() -> Void)?, alsoShowHelp shafter: Bool) {
         if barPresentationState == .Invisible {
             barPresentationState = .Animating
-            UIView.animateWithDuration(1, delay: 0, options: .LayoutSubviews, animations:
+            UIView.animateWithDuration(0.5, delay: 0, options: .LayoutSubviews, animations:
                 { () -> Void in
                     self.leftPager.alpha = 1
                     self.rightPager.alpha = 1
-                    self.topConstraint.constant = 0
                     self.bottomConstraint.constant = 0
                     self.layoutIfNeeded()
                 }, completion: { (finished: Bool) -> Void in
@@ -188,11 +209,10 @@ enum ToolbarPresentationState {
                 })
             } else {
                 barPresentationState = .Animating
-                UIView.animateWithDuration(1, delay: 0, options: .LayoutSubviews, animations:
+                UIView.animateWithDuration(0.5, delay: 0, options: .LayoutSubviews, animations:
                     { () -> Void in
                         self.leftPager.alpha = 0
                         self.rightPager.alpha = 0
-                        self.topConstraint.constant = -90
                         self.bottomConstraint.constant = -90
                         self.layoutIfNeeded()
                     }, completion: { (finished: Bool) -> Void in
@@ -285,5 +305,28 @@ enum ToolbarPresentationState {
             return false
         }
         return true
+    }
+    
+    func makeGotItNormal() {
+        gotItButton.layer.borderColor = UIColor.whiteColor().CGColor
+        gotItButton.backgroundColor = UIColor.clearColor()
+    }
+    
+    @IBAction func onGotItDown() {
+        gotItButton.layer.borderColor = UIColor.darkGrayColor().CGColor
+        gotItButton.backgroundColor = UIColor.lightTextColor()
+    }
+    
+    @IBAction func onGatItCancel() {
+        makeGotItNormal()
+    }
+    
+    @IBAction func onGotItTouchUp() {
+        makeGotItNormal()
+    }
+    
+    @IBAction func onGotItClick() {
+        makeGotItNormal()
+        hideHelpScreen(withCompletion: nil)
     }
 }

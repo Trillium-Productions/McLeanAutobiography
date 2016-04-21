@@ -8,15 +8,17 @@
 
 import UIKit
 
-class MainViewController : UIViewController, UIScrollViewDelegate {
+class MainViewController : UIViewController, UIScrollViewDelegate, InfoViewDelegate {
     
     @IBOutlet var scroller: UIScrollView!
     @IBOutlet var content: BackgroundView!
     var pager: PagesViewController!
+    private(set) var hasScrolledToAutobio = false
     
     override func viewDidLoad() {
         scroller = view as! UIScrollView
-        content = BackgroundView(parent: self)
+        content.parent = self
+        content.infoView.delegate = self
         scroller.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         scroller.contentSize = content.frame.size
         scroller.contentMode = .Left
@@ -36,16 +38,32 @@ class MainViewController : UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if scroller.contentOffset.x == 1024 {
             scroller.scrollEnabled = false
-            pager.utilityOverlay.showToolbar(withCompletion: nil, alsoShowHelp: true)
+            pager.utilityOverlay.showUp({ () -> Void in
+                self.pager.utilityOverlay.showToolbar(withCompletion: nil, alsoShowHelp: !self.hasScrolledToAutobio)
+                self.hasScrolledToAutobio = true
+            })
         }
     }
     
     func handleBackRequest() {
         view.userInteractionEnabled = false
         pager.utilityOverlay.hideToolbar { () -> Void in
-            self.scroller.scrollEnabled = true
-            self.scroller.setContentOffset(CGPoint.zero, animated: true)
-            self.view.userInteractionEnabled = true
+            self.pager.utilityOverlay.goAway({ () -> Void in
+                self.scroller.scrollEnabled = true
+                self.scroller.setContentOffset(CGPoint.zero, animated: true)
+                self.view.userInteractionEnabled = true
+            })
+        }
+    }
+    
+    func infoViewContinueWasTapped() {
+        view.userInteractionEnabled = false
+        scroller.setContentOffset(CGPoint(x: 1024, y: 0), animated: true)
+        pager.utilityOverlay.showUp { () -> Void in
+            self.pager.utilityOverlay.showToolbar(withCompletion: { () -> Void in
+                self.view.userInteractionEnabled = true
+                }, alsoShowHelp: !self.hasScrolledToAutobio)
+            self.hasScrolledToAutobio = true
         }
     }
 }

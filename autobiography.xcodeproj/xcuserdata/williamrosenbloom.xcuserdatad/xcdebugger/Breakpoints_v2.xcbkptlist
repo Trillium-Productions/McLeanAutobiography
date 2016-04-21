@@ -73,70 +73,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "autobiography/pagesview.swift"
-            timestampString = "481567753.586357"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "pagesCollectionReceivedHotButtonTap(_:inSet:inPage:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "autobiography/pagesview.swift"
-            timestampString = "481567753.586357"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "pagesCollectionReceivedHotButtonTap(_:inSet:inPage:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "autobiography.PagesViewController.pagesCollectionReceivedHotButtonTap (autobiography.PagesViewController)(autobiography.HotButtonView, inSet : autobiography.HotButtonSet, inPage : autobiography.SinglePageViewController) -&gt; ()"
-                  moduleName = "autobiography"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/williamrosenbloom/IdeaProjects/McLeanProjects/Autobiography/autobiography/autobiography/pagesview.swift"
-                  timestampString = "481487287.4578"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "1936">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "autobiography.PagesViewController.(pagesCollectionReceivedHotButtonTap (autobiography.PagesViewController) -&gt; (autobiography.HotButtonView, inSet : autobiography.HotButtonSet, inPage : autobiography.SinglePageViewController) -&gt; ()).(closure #1)"
-                  moduleName = "autobiography"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/williamrosenbloom/IdeaProjects/McLeanProjects/Autobiography/autobiography/autobiography/pagesview.swift"
-                  timestampString = "481487287.457971"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "19">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "autobiography/customwindow.swift"
             timestampString = "481564148.724792"
             startingColumnNumber = "9223372036854775807"
@@ -176,6 +112,22 @@
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "onContinueTap()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "autobiography/locationdata.swift"
+            timestampString = "482951678.329156"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "getBasisDictionary()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

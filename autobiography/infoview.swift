@@ -55,7 +55,7 @@ protocol InfoViewDelegate {
     }
     
     func startAnimating() {
-        continueImage.layer.mask?.addAnimation(contAnimation, forKey: "secret_text_animating_key")
+        continueImage.layer.mask?.addAnimation(contAnimation, forKey: "position.x")
     }
     
     func stopAnimating() {

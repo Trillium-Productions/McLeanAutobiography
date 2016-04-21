@@ -143,15 +143,7 @@ class LocationDataDocument: NSObject {
 class LocationDataProvider: NSObject {
     
     static func getBasisDictionary() -> NSDictionary {
-        if let url = NSBundle.mainBundle().URLForResource("hot-button-positions", withExtension: "plist") {
-            if let dict = NSDictionary(contentsOfURL: url) {
-                return dict
-            } else {
-                fatalError("Unable to get data for hot button locations")
-            }
-        } else {
-            fatalError("Unable to get URL for hot button locations data file")
-        }
+        return DataProvider.getHotButtonsLocationsDictionary()
     }
     
     static func getDataForStyle(style: LocationDataStyle) -> LocationDataDocument {

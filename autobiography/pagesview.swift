@@ -84,18 +84,12 @@ class PagesViewController: UIPageViewController, ToolbarViewDelegate, PagesColle
     }
     
     func pagesCollectionReceivedHotButtonTap(button: HotButtonView, inSet set: HotButtonSet, inPage: SinglePageViewController) {
-        let overlay = UIVisualEffectView(effect: UIBlurEffect(style: .Dark))
-        overlay.frame = view.bounds
-        let rec = UITapGestureRecognizer(target: overlay, action: "removeFromSuperview")
-        rec.numberOfTapsRequired = 1
-        rec.numberOfTouchesRequired = 1
-        overlay.contentView.addGestureRecognizer(rec)
+        view.userInteractionEnabled = false
+        let sRect = view.convertRect(button.frame, fromView: button.superview!)
+        let overlay = PopupView(index: PopupIndex(rawValue: button.basis.index)!, initialFrame: sRect)
         view.addSubview(overlay)
-        let popup = UIImageView(frame: view.convertRect(button.frame, fromView: button.superview!))
-        popup.image = button.basis.getPopupImage()
-        overlay.contentView.addSubview(popup)
-        UIView.animateWithDuration(0.5) { () -> Void in
-            popup.frame = overlay.bounds
+        overlay.doPopup { () -> Void in
+            self.view.userInteractionEnabled = true
         }
     }
     

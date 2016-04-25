@@ -255,46 +255,6 @@
                             <key>frame.height</key>
                             <real>0.04183427192276750000</real>
                         </dict>
-                        <dict>
-                            <key>frame.x</key>
-                            <real>0.01064322073114299000</real>
-                            <key>frame.y</key>
-                            <real>0.39608474121748460000</real>
-                            <key>frame.width</key>
-                            <real>0.95881536325775110000</real>
-                            <key>frame.height</key>
-                            <real>0.04666130329847144000</real>
-                        </dict>
-                        <dict>
-                            <key>frame.x</key>
-                            <real>0.00416473854696899560</real>
-                            <key>frame.y</key>
-                            <real>0.43228747653526417000</real>
-                            <key>frame.width</key>
-                            <real>0.96436834798704310000</real>
-                            <key>frame.height</key>
-                            <real>0.04263877715205148500</real>
-                        </dict>
-                        <dict>
-                            <key>frame.x</key>
-                            <real>0.00462748727440999500</real>
-                            <key>frame.y</key>
-                            <real>0.47224456958970235000</real>
-                            <key>frame.width</key>
-                            <real>0.92781119851920400000</real>
-                            <key>frame.height</key>
-                            <real>0.03781174577634755000</real>
-                        </dict>
-                        <dict>
-                            <key>frame.x</key>
-                            <real>0.00509023600185099500</real>
-                            <key>frame.y</key>
-                            <real>0.49959774738535800000</real>
-                            <key>frame.width</key>
-                            <real>0.11476168440536788000</real>
-                            <key>frame.height</key>
-                            <real>0.02708500938589434000</real>
-                        </dict>
                     </array>
                 </dict>
                 <dict>
@@ -770,46 +730,6 @@
                             <real>0.61591855622397040000</real>
                             <key>frame.height</key>
                             <real>0.02574416733708769000</real>
-                        </dict>
-                        <dict>
-                            <key>frame.x</key>
-                            <real>0.01619620546043498400</real>
-                            <key>frame.y</key>
-                            <real>0.40493429873960846000</real>
-                            <key>frame.width</key>
-                            <real>0.83248496066635810000</real>
-                            <key>frame.height</key>
-                            <real>0.02279431482971305800</real>
-                        </dict>
-                        <dict>
-                            <key>frame.x</key>
-                            <real>0.01619620546043498400</real>
-                            <key>frame.y</key>
-                            <real>0.43711450791096806000</real>
-                            <key>frame.width</key>
-                            <real>0.87135585377140210000</real>
-                            <key>frame.height</key>
-                            <real>0.02359882005899705000</real>
-                        </dict>
-                        <dict>
-                            <key>frame.x</key>
-                            <real>0.01388246182322998600</real>
-                            <key>frame.y</key>
-                            <real>0.46741753821399840000</real>
-                            <key>frame.width</key>
-                            <real>0.62285978713558540000</real>
-                            <key>frame.height</key>
-                            <real>0.02520783051756503000</real>
-                        </dict>
-                        <dict>
-                            <key>frame.x</key>
-                            <real>0.01249421564090698700</real>
-                            <key>frame.y</key>
-                            <real>0.50308393671225530000</real>
-                            <key>frame.width</key>
-                            <real>0.09486348912540490000</real>
-                            <key>frame.height</key>
-                            <real>0.01877178868329310700</real>
                         </dict>
                     </array>
                 </dict>

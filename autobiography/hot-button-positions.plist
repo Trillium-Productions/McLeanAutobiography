@@ -247,11 +247,11 @@
                         </dict>
                         <dict>
                             <key>frame.x</key>
-                            <real>0.00971772327626099000</real>
+                            <real>0.01111772327626099000</real>
                             <key>frame.y</key>
-                            <real>0.36658621614373826000</real>
+                            <real>0.36758621614373826000</real>
                             <key>frame.width</key>
-                            <real>0.96807033780657100000</real>
+                            <real>0.1466</real>
                             <key>frame.height</key>
                             <real>0.04183427192276750000</real>
                         </dict>
@@ -727,7 +727,7 @@
                             <key>frame.y</key>
                             <real>0.37060874229015820000</real>
                             <key>frame.width</key>
-                            <real>0.61591855622397040000</real>
+                            <real>0.1185</real>
                             <key>frame.height</key>
                             <real>0.02574416733708769000</real>
                         </dict>
@@ -740,7 +740,7 @@
                     <array>
                         <dict>
                             <key>frame.x</key>
-                            <real>0.38685793614067560000</real>
+                            <real>0.39185793614067560000</real>
                             <key>frame.y</key>
                             <real>0.50227943148297130000</real>
                             <key>frame.width</key>

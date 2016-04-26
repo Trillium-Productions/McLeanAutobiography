@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Corbel.ttf">
@@ -50,17 +49,17 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="continue" translatesAutoresizingMaskIntoConstraints="NO" id="eXb-07-Stw">
-                    <rect key="frame" x="182" y="649" width="660" height="65"/>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="continue" translatesAutoresizingMaskIntoConstraints="NO" id="eXb-07-Stw">
+                    <rect key="frame" x="347.5" y="635.5" width="329" height="72.5"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="eXb-07-Stw" secondAttribute="height" multiplier="11:1" constant="-55" id="9Eh-hX-2Rz"/>
-                        <constraint firstAttribute="width" constant="660" id="Gs1-U7-dLi"/>
+                        <constraint firstAttribute="height" constant="72.5" id="57r-0L-t4r"/>
+                        <constraint firstAttribute="width" constant="329" id="7kR-Bg-xWW"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="eXb-07-Stw" secondAttribute="bottom" constant="54" id="6rZ-i2-igR"/>
+                <constraint firstAttribute="bottom" secondItem="eXb-07-Stw" secondAttribute="bottom" constant="60" id="6rZ-i2-igR"/>
                 <constraint firstAttribute="trailing" secondItem="K1a-Rb-4MZ" secondAttribute="trailing" id="9tQ-zM-TT8"/>
                 <constraint firstItem="zVJ-95-gCA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="69" id="BcP-43-GHz"/>
                 <constraint firstItem="Hzk-YY-H85" firstAttribute="leading" secondItem="zVJ-95-gCA" secondAttribute="trailing" id="cCB-FU-Upo"/>
@@ -88,6 +87,6 @@
     </objects>
     <resources>
         <image name="JesseFell" width="485" height="580"/>
-        <image name="continue" width="1620" height="160"/>
+        <image name="continue" width="700" height="160"/>
     </resources>
 </document>

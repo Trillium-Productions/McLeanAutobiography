@@ -24,13 +24,13 @@
 		96BC2A201CC9521800A9EE36 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC2A1F1CC9521800A9EE36 /* AVKit.framework */; };
 		96BC2A221CC9522200A9EE36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC2A211CC9522200A9EE36 /* UIKit.framework */; };
 		96BC2A241CC9522F00A9EE36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BC2A231CC9522F00A9EE36 /* Foundation.framework */; };
+		96BC2BE11CD0050600A9EE36 /* attractscreen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96BC2BE01CD0050600A9EE36 /* attractscreen.mp4 */; };
 		96C0A6281CB0B430002293AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0A6271CB0B430002293AF /* AppDelegate.swift */; };
 		96C0A62D1CB0B430002293AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C0A62B1CB0B430002293AF /* Main.storyboard */; };
 		96C0A62F1CB0B430002293AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C0A62E1CB0B430002293AF /* Assets.xcassets */; };
 		96C0A6321CB0B430002293AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C0A6301CB0B430002293AF /* LaunchScreen.storyboard */; };
 		96C0A63D1CB0B550002293AF /* customwindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0A63C1CB0B550002293AF /* customwindow.swift */; };
 		96C0A63F1CB0B5E5002293AF /* introview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0A63E1CB0B5E5002293AF /* introview.swift */; };
-		96C0A6441CB0BB12002293AF /* attractscreen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96C0A6431CB0BB12002293AF /* attractscreen.mp4 */; };
 		96C0A6461CB0BD29002293AF /* maininteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0A6451CB0BD29002293AF /* maininteractive.swift */; };
 		96C0A6481CB0BDD2002293AF /* scrollbackground.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C0A6471CB0BDD2002293AF /* scrollbackground.xib */; };
 		96C0A64C1CB0C108002293AF /* infoview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C0A64B1CB0C108002293AF /* infoview.xib */; };
@@ -59,6 +59,7 @@
 		96BC2A1F1CC9521800A9EE36 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		96BC2A211CC9522200A9EE36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		96BC2A231CC9522F00A9EE36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96BC2BE01CD0050600A9EE36 /* attractscreen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = attractscreen.mp4; sourceTree = "<group>"; };
 		96C0A6241CB0B430002293AF /* autobiography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autobiography.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C0A6271CB0B430002293AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96C0A62C1CB0B430002293AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		96C0A6331CB0B430002293AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96C0A63C1CB0B550002293AF /* customwindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customwindow.swift; sourceTree = "<group>"; };
 		96C0A63E1CB0B5E5002293AF /* introview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = introview.swift; sourceTree = "<group>"; };
-		96C0A6431CB0BB12002293AF /* attractscreen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = attractscreen.mp4; sourceTree = "<group>"; };
 		96C0A6451CB0BD29002293AF /* maininteractive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = maininteractive.swift; sourceTree = "<group>"; };
 		96C0A6471CB0BDD2002293AF /* scrollbackground.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = scrollbackground.xib; sourceTree = "<group>"; };
 		96C0A64B1CB0C108002293AF /* infoview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoview.xib; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 				96677C031CB197A500A2FA0B /* Corbel-BoldItalic.ttf */,
 				96677BED1CB130C500A2FA0B /* Corbel-Bold.ttf */,
 				96C0A64F1CB0C45A002293AF /* Corbel.ttf */,
-				96C0A6431CB0BB12002293AF /* attractscreen.mp4 */,
 				96C0A62E1CB0B430002293AF /* Assets.xcassets */,
+				96BC2BE01CD0050600A9EE36 /* attractscreen.mp4 */,
 				96C0A65D1CB10A15002293AF /* hot-button-positions.plist */,
 				96BC2A181CC9518700A9EE36 /* popup-sizes.plist */,
 			);
@@ -272,6 +272,7 @@
 				96C0A6481CB0BDD2002293AF /* scrollbackground.xib in Resources */,
 				96C0A65E1CB10A15002293AF /* hot-button-positions.plist in Resources */,
 				96677C021CB1844D00A2FA0B /* toolbarview.xib in Resources */,
+				96BC2BE11CD0050600A9EE36 /* attractscreen.mp4 in Resources */,
 				96C0A6321CB0B430002293AF /* LaunchScreen.storyboard in Resources */,
 				96C0A62F1CB0B430002293AF /* Assets.xcassets in Resources */,
 				96BC2A191CC9518700A9EE36 /* popup-sizes.plist in Resources */,
@@ -281,7 +282,6 @@
 				96677C041CB197A500A2FA0B /* Corbel-BoldItalic.ttf in Resources */,
 				96C0A6501CB0C45A002293AF /* Corbel.ttf in Resources */,
 				96C0A64C1CB0C108002293AF /* infoview.xib in Resources */,
-				96C0A6441CB0BB12002293AF /* attractscreen.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
